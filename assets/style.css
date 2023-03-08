@@ -1,8 +1,33 @@
 /* Just to make the demo easier to work with. */
 
+:root {
+	--spacing: 1em;
+}
+
+@media (min-width: 600px) {
+	:root {
+		--spacing: 2em;
+	}
+}
+
+
+
 body {
 	font-family: sans-serif;
-	padding: 1em;
+	padding: var(--spacing);
 }
 
 a { color: blue; }
+
+ul {
+	display: grid;
+	gap: calc(2 * var(--spacing));
+	margin-top: calc(2 * var(--spacing));
+}
+
+li {
+	display: grid;
+	gap: var(--spacing);
+}
+
+h2 { font-weight: bold; }
