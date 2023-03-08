@@ -9,9 +9,10 @@
 body {
 	font-family: sans-serif;
 	padding: var(--spacing);
+	padding-bottom: 33vh;
 }
 
-aside { margin-bottom: var(--spacing); }
+aside { margin-bottom: calc(4 * var(--spacing)); }
 
 h1 { font-size: 200%; }
 
