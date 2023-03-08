@@ -4,11 +4,9 @@ const renderItems = (collection) => {
 	const collectionList = document.getElementById('collection')
 
 
-
 	// Loop through each item in the collection array
 	collection.forEach(item => {
 		const listItem = document.createElement('li') // Make the `li`
-
 
 
 		// You can make each element inside of that…
@@ -19,7 +17,6 @@ const renderItems = (collection) => {
 		const itemImage = document.createElement('img') // And an image
 		itemImage.src = item.posterImage // Set the `src` attribute from the JSON
 		listItem.appendChild(itemImage) // And add that too
-
 
 
 		// This can get annoying, so we can use “template literals” instead
@@ -49,5 +46,5 @@ fetch('assets/collection.json')
 	.then(response => response.json())
 	.then(collection => {
 		// And passes the data to the function, above!
-		renderItems(collection)
+		renderItems(collection.reverse()) // In reverse order
 	})
