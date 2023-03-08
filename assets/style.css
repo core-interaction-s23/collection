@@ -31,3 +31,5 @@ li {
 	display: grid;
 	gap: var(--spacing);
 }
+
+.faded { opacity: 0.333 }
