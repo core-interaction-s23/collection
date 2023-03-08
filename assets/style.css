@@ -11,6 +11,12 @@ body {
 	padding: var(--spacing);
 }
 
+aside { margin-bottom: var(--spacing); }
+
+h1 { font-size: 200%; }
+
+h2 { font-weight: bold; }
+
 a { color: blue; }
 
 em { font-style: italic }
@@ -25,5 +31,3 @@ li {
 	display: grid;
 	gap: var(--spacing);
 }
-
-h2 { font-weight: bold; }
