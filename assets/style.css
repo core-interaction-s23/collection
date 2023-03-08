@@ -4,12 +4,6 @@
 	--spacing: 1em;
 }
 
-@media (min-width: 600px) {
-	:root {
-		--spacing: 2em;
-	}
-}
-
 
 
 body {
@@ -19,10 +13,12 @@ body {
 
 a { color: blue; }
 
+em { font-style: italic }
+
 ul {
 	display: grid;
-	gap: calc(2 * var(--spacing));
-	margin-top: calc(2 * var(--spacing));
+	gap: calc(4 * var(--spacing));
+	margin-top: calc(4 * var(--spacing));
 }
 
 li {
