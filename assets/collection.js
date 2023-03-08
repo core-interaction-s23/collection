@@ -28,7 +28,7 @@ const renderItems = (collection) => {
 				<p>Released in <time>${item.year}</time></p>
 				<p><em>${item.runTime}</em></p>
 				<a href="${item.imdbLink}">
-					<p>${item.imdbRating} / 10</p>
+					<p>${item.imdbRating} / 10 →</p>
 				</a>
 			`
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
